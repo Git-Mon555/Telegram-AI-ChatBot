@@ -48,6 +48,8 @@ def default_max_tokens(model: str) -> int:
         return base * 8
     elif model in GPT_4_VISION_MODELS:
         return 4096
+    elif model in GPT_4_128K_MODELS:
+        return 4096
     elif model in GPT_4O_MODELS:
         return 4096
     elif model in O_MODELS:
