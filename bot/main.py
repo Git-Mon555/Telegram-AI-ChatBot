@@ -28,8 +28,8 @@ def main():
 
     # Setup configurations
     model = os.environ.get('OPENAI_MODEL', 'gpt-4o')
-    functions_available = are_functions_available(model=model)
-    max_tokens_default = default_max_tokens(model=model)
+    # functions_available = are_functions_available(model=model)
+    # max_tokens_default = default_max_tokens(model=model)
     openai_config = {
         'api_key': os.environ['OPENAI_API_KEY'],
         'show_usage': os.environ.get('SHOW_USAGE', 'false').lower() == 'true',
