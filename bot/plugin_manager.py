@@ -38,7 +38,6 @@ class PluginManager:
             'gtts_text_to_speech': GTTSTextToSpeech,
             'auto_tts': AutoTextToSpeech,
             'whois': WhoisPlugin,
-            'webshot': WebshotPlugin,
             'iplocation': IpLocationPlugin,
         }
         self.plugins = [plugin_mapping[plugin]() for plugin in enabled_plugins if plugin in plugin_mapping]
