@@ -51,7 +51,6 @@ class PluginManager:
 
     async def call_function(self, function_name, helper, arguments):
         """
-        Call a function based on the name and parameters provided
         """
         plugin = self.__get_plugin_by_function_name(function_name)
         if not plugin:
