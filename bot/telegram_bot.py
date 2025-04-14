@@ -31,6 +31,7 @@ class ChatGPTTelegramBot:
 
     def __init__(self, config: dict, openai: OpenAIHelper):
         """
+        Initializes the bot with the given configuration and GPT bot object.
         :param config: A dictionary containing the bot configuration
         :param openai: OpenAIHelper object
         """
