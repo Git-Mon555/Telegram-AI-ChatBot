@@ -64,7 +64,6 @@ class PluginManager:
         """
         plugin = self.__get_plugin_by_function_name(function_name)
         if not plugin:
-            return ''
         return plugin.get_source_name()
 
     def __get_plugin_by_function_name(self, function_name):
