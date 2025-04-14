@@ -60,7 +60,6 @@ class PluginManager:
 
     def get_plugin_source_name(self, function_name) -> str:
         """
-        Return the source name of the plugin
         """
         plugin = self.__get_plugin_by_function_name(function_name)
         if not plugin:
