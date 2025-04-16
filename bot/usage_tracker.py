@@ -48,7 +48,7 @@ class UsageTracker:
         :param user_name: Telegram user name
         :param logs_dir: path to directory of usage logs, defaults to "usage_logs"
         """
-        # self.user_id = user_id
+        self.user_id = user_id
         self.logs_dir = logs_dir
         # path to usage file of given user
         self.user_file = f"{logs_dir}/{user_id}.json"
