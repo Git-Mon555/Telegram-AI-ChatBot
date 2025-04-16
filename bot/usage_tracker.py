@@ -77,9 +77,9 @@ class UsageTracker:
         :param tokens: total tokens used in last request
         :param tokens_price: price per 1000 tokens, defaults to 0.002
         """
-        today = date.today()
-        token_cost = round(float(tokens) * tokens_price / 1000, 6)
-        self.add_current_costs(token_cost)
+        # today = date.today()
+        # token_cost = round(float(tokens) * tokens_price / 1000, 6)
+        # self.add_current_costs(token_cost)
 
         # update usage_history
         if str(today) in self.usage["usage_history"]["chat_tokens"]:
