@@ -23,10 +23,6 @@ class UsageTracker:
             "all_time": 3.23,
             "last_update": "2023-03-14"},
         "usage_history": {
-            "chat_tokens": {
-                "2023-03-13": 520,
-                "2023-03-14": 1532
-            },
             "transcription_seconds": {
                 "2023-03-13": 125,
                 "2023-03-14": 64
