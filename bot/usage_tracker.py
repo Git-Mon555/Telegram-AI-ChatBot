@@ -89,7 +89,9 @@ class UsageTracker:
             # create new entry for current date
             self.usage["usage_history"]["chat_tokens"][str(today)] = tokens
 
-       
+        # write updated token usage to user file
+        with open(self.user_file, "w") as outfile:
+            json.dump(self.usage, outfile)
 
     def get_current_token_usage(self):
         """Get token amounts used for today and this month
