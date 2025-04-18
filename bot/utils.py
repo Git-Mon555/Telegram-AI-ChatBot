@@ -47,6 +47,7 @@ async def is_user_in_group(update: Update, context: CallbackContext, user_id: in
 
 def get_thread_id(update: Update) -> int | None:
     """
+    Gets the message thread id for the update, if any
     """
     if update.effective_message and update.effective_message.is_topic_message:
         return update.effective_message.message_thread_id
