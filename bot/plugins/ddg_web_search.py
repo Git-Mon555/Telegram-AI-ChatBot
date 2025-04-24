@@ -14,8 +14,6 @@ class DDGWebSearchPlugin(Plugin):
     def __init__(self):
         self.safesearch = os.getenv('DUCKDUCKGO_SAFESEARCH', 'moderate')
 
-    def get_source_name(self) -> str:
-        return "DuckDuckGo"
 
     def get_spec(self) -> [Dict]:
         return [{
