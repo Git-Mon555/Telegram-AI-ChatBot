@@ -10,6 +10,7 @@ from .plugin import Plugin
 
 class DDGImageSearchPlugin(Plugin):
     """
+    A plugin to search images and GIFs for a given query, using DuckDuckGo
     """
     def __init__(self):
         self.safesearch = os.getenv('DUCKDUCKGO_SAFESEARCH', 'moderate')
