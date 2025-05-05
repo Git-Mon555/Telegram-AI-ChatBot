@@ -7,6 +7,8 @@ class DicePlugin(Plugin):
     """
     A plugin to send a die in the chat
     """
+    def get_source_name(self) -> str:
+        return "Dice"
 
     def get_spec(self) -> [Dict]:
         return [{
