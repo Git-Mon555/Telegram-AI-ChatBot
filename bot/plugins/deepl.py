@@ -10,11 +10,6 @@ class DeeplTranslatePlugin(Plugin):
     """
     A plugin to translate a given text from a language to another, using DeepL
     """
-    def __init__(self):
-        deepl_api_key = os.getenv('DEEPL_API_KEY')
-        if not deepl_api_key:
-            raise ValueError('DEEPL_API_KEY environment variable must be set to use DeepL Plugin')
-        self.api_key = deepl_api_key
 
     def get_source_name(self) -> str:
         return "DeepL Translate"
