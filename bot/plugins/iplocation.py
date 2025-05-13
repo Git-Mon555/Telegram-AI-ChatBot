@@ -8,6 +8,10 @@ class IpLocationPlugin(Plugin):
     """
     A plugin to get geolocation and other information for a given IP address
     """
+
+    def get_source_name(self) -> str:
+        return "IP.FM"
+
     def get_spec(self) -> [Dict]:
         return [{
             "name": "iplocation",
