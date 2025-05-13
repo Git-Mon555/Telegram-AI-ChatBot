@@ -11,6 +11,9 @@ class GTTSTextToSpeech(Plugin):
     A plugin to convert text to speech using Google Translate's Text to Speech API
     """
 
+    def get_source_name(self) -> str:
+        return "gTTS"
+
     def get_spec(self) -> [Dict]:
         return [{
             "name": "google_translate_text_to_speech",
