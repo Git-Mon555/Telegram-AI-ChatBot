@@ -38,6 +38,7 @@ class IpLocationPlugin(Plugin):
             location = ', '.join(filter(None, [country, subdivisions, city])) or "None"
         
             asn = response_data.get('data', {}).get('asn', "None")
+            as_name = response_data.get('data', {}).get('as_name', "None")
             as_domain = response_data.get('data', {}).get('as_domain', "None")       
             return {"Location": location, "ASN": asn, "AS Name": as_name, "AS Domain": as_domain}
         except Exception as e:
